@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Responsive meta tags  -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    <!-- Add Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Add fontawesome icons -->
+    <script src="https://kit.fontawesome.com/d629a925ee.js" crossorigin="anonymous"></script>
+    <!-- Link Own CSS file -->
+    <link href="../CSS/styles.css" rel="stylesheet">
+    <title>Travel Website</title>
+  </head>
+
+  <body>
+
+    <!-- HOME PAGE INTRO -->
+    <header>
+
+        <!-- Navbar -->
+        <nav class="overlay navigation">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+                <li><a href="saveForLater.html" class="nav-link">Save for Later</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Welcome h1 introductory text -->
+        <div class="overlay intro-text align-center">
+            <h1>Explore. Experience. Enjoy.</h1>
+        </div>
+
+        <!-- Crossfade Carousel from Bootstrap for home page image slideshow-->
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner" data-bs-pause="false">
+        
+                <!-- First carousel item example -->
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <picture>
+                        <!-- Two different images based on the width of the screen -->
+                        <source media="(min-width: 768px)" srcset="../assets/fire.jpg">
+                        <img src="../assets/helicopter.jpg" class="d-block w-100 full-screen-img" alt="Home page background image">
+                    </picture>
+                </div>
+                <!-- First carousel item example end -->
+        
+                <div class="carousel-item" data-bs-interval="4000">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="../assets/bali.jpg">
+                        <img src="../assets/dronebeach.jpg" class="d-block w-100 full-screen-img" alt="Home page background image">
+                    </picture>
+                </div>
+        
+                <div class="carousel-item" data-bs-interval="4000">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="../assets/beach.jpg">
+                        <img src="../assets/dune.jpg" class="d-block w-100 full-screen-img" alt="Home page background image">
+                    </picture>
+                </div>
+        
+                <div class="carousel-item" data-bs-interval="4000">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="../assets/sanddune.jpg">
+                        <img src="../assets/van.jpg" class="d-block w-100 full-screen-img" alt="Home page background image">
+                    </picture>
+                </div>
+        
+            </div>
+        </div>
+    </header>
+    <!-- HOME PAGE INTRO END -->
+
+
+    <!-- DESTINATIONS SECTION -->
+    <section class="destinations-wrapper">
+
+        <!-- Destinations title and paragraph for mobile view  -->
+        <div class="show-mobile align-center destination-title">
+            <h2>Where to next?</h2>
+            <p class="subheading">Let´s discover the world together.</p>
+        </div>
+
+        <!-- Destinations image grid section -->
+        <div class="img-grid">
+
+            <!-- Grid item of Asia with image and title of the place -->
+            <div class="card stacked">
+                <img class="card-img" src="../assets/asia.jpg" alt="Picture of Asia">
+                <div class="card-content">
+                    <p class="card-title">ASIA</p>
+                </div>
+            </div>
+
+            <!-- Grid item of Africa -->
+            <div class="card stacked">
+                <img class="card-img" src="../assets/africa.jpg" alt="Picture of Africa">
+                <div class="card-content">
+                    <p class="card-title">AFRICA</p>
+                </div>
+            </div>
+
+            <!-- Grid item of Europe -->
+            <div class="card stacked">
+                <img class="card-img" src="../assets/europe.jpg" alt="Picture of Europe">
+                <div class="card-content">
+                    <p class="card-title">EUROPE</p>
+                </div>
+            </div>
+
+            <!-- Grid item of South America -->
+            <div class="card stacked">
+                <img class="card-img" src="../assets/samerica.jpg" alt="Picture of South America">
+                <div class="card-content">
+                    <p class="card-title">SOUTH AMERICA</p>
+                </div>
+            </div>
+
+            <!-- Grid item of Australia -->
+            <div class="card stacked">
+                <img class="card-img" src="../assets/australia.jpg" alt="Picture of Australia">
+                <div class="card-content">
+                    <p class="card-title">AUSTRALIA</p>
+                </div>
+            </div>
+
+            <!-- Grid item of North America -->
+            <div class="card stacked">
+                <img class="card-img" src="../assets/namerica.jpg" alt="Picture of North America">
+                <div class="card-content">
+                    <p class="card-title">NORTH AMERICA</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Destination text and button alignment for desktop -->
+        <div class="destination-flex-column">
+            
+            <!-- Destinations title and parapgraph for desktop view -->
+            <div class="show-desktop align-center">
+                <h2>Where to next?</h2>
+                <p class="subheading">Let´s discover the world together.</p>
+            </div>
+
+            <!-- Destinations list of continents -->
+            <div class="destination-list-container">
+                
+                <!-- Destination list items wrapper -->
+                <div class="destination-item-wrapper">
+                    <!-- 3 list items -->
+                    <ul class="destination-list">
+                        <li class="destination-list-item">Australia</li>
+                        <li class="destination-list-item">Africa</li>
+                        <li class="destination-list-item">North America</li>
+                    </ul>
+
+                    <!-- 3 list items -->
+                    <ul class="destination-list">
+                        <li class="destination-list-item">Europe</li>
+                        <li class="destination-list-item">Asia</li>
+                        <li class="destination-list-item">South America</li>
+                    </ul>
+                </div>
+                
+                <!-- Destinations CTA button -->
+                <div class="align-center">
+                    <!-- Aware of error when validating html: The element button must not appear as a descendant of the a element -->
+                    <!-- Discussed with mentor Sashlin Moonsamy that it might be an error from the validator side -->
+                    <a href="destinations.html">
+                        <button class="destination-button">View Destinations</button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- DESTINATIONS SECTION END -->
+
+
+
+    <!-- "GET LOCAL" SECTION -->
+    <section class="local-section">
+
+        <!-- Local section title and paragraph -->
+        <div class="margin-10 local-content"> 
+            <h2 class="local-title">Get Lost. Get Local.</h2>
+            <p class="local-text">
+                Travelling can teach you more than any university course. You learn about the culture of the 
+                country you visit. If you talk to locals, you will likely learn about their thinking, habits, 
+                traditions and history as well. Some of my most cherished memories are from the times when I was travelling. 
+                If you travel, you can experience things that you could never experience at home. You may see beautiful places 
+                and landscapes that do not exist where you live. You may meet people that will change your life, and your thinking. 
+                You may try activities that you have never tried before.
+                <br>No matter how much time you spend at home, there are only so many things that you can do there. If you want to 
+                expand your horizons and try something new, you will need to travel to an entirely new destination and immerse yourself in 
+                its culture. It allows you to see things from a completely different perspective and learn new things about the world you 
+                share with others.
+            </p>
+        </div>
+
+    </section>
+    <!-- "GET LOCAL" SECTION END -->
+
+
+    <!-- INTERESTS SECTION -->
+    <section class="interests-container">
+
+        <!-- Interests section background image -->
+        <img class="interests-bg" src="../assets/texture.jpg" alt="Textured Background">
+
+        <!-- Interests section h2 and list container -->
+        <div class="interests-content-container">
+            <h2 class="align-center interests-title">What moves you?</h2>
+        
+            <!-- Interests section list container -->
+            <div class="interests-wrapper">
+                <!-- Interests section list -->
+                <ul class="interests-list">
+
+                    <!-- EAT list item. A list item with image, h3 and nested list for locations -->
+                    <li class="interests-item eat">
+                        <div class="interests-content">
+                            <div class="rounded-pill">
+                                <img class="interests-img" src="../assets/eat.jpg" alt="">
+                            </div>
+                            <h3>Eat</h3>
+                            <ul class="interests-destinations">
+                                <li>Lima, Peru</li>
+                                <li>Roma, Italy</li>
+                                <li>Kuala Lumpur, Malaysia</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- JOURNEY list item -->
+                    <li class="interests-item journey">
+                        <div class="interests-content">
+                            <div class="rounded-pill">
+                                <img class="interests-img" src="../assets/journey.jpg" alt="">
+                            </div>
+                            <h3>Journey</h3>
+                            <ul class="interests-destinations">
+                                <li>Nova Scotia, Canada</li>
+                                <li>Western Australia</li>
+                                <li>Zambia</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- LEARN list item -->
+                    <li class="interests-item learn">
+                        <div class="interests-content last-child">
+                            <div class="rounded-pill">
+                                <img class="interests-img" src="../assets/learn.jpg" alt="">
+                            </div>
+                            <h3>Learn</h3>
+                            <ul class="interests-destinations">
+                                <li>El Salvador</li>
+                                <li>Dresden, Germany</li>
+                                <li>New Mexico, USA</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- UNWIND list item -->
+                    <li class="interests-item unwind">
+                        <div class="interests-content">
+                            <div class="rounded-pill">
+                                <img class="interests-img" src="../assets/unwind.jpg" alt="">
+                            </div>
+                            <h3>Unwind</h3>
+                            <ul class="interests-destinations">
+                                <li>Dominica</li>
+                                <li>Halkidiki, Greece</li>
+                                <li>Jordan</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- CONNECT list item -->
+                    <li class="interests-item connect">
+                        <div class="interests-content last-child">
+                            <div class="rounded-pill">
+                                <img class="interests-img" src="../assets/connect.jpg" alt="">
+                            </div>
+                            <h3>Connect</h3>
+                            <ul class="interests-destinations">
+                                <li>Accra, Ghana</li>
+                                <li>Albania</li>
+                                <li>Maputo, Mozambique</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- INTERESTS SECTION END -->
+
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer-section">
+
+        <!-- Fontawesome social icons -->
+        <div class="social-icons margin-10">
+            <a class="social-links" href="https://www.linkedin.com/in/timea-pentek"><i class="fa-brands fa-linkedin-in fa-social-icons"></i></a>
+            <a class="social-links" href="https://github.com/PentekTimi"><i class="fa-brands fa-github fa-social-icons"></i></a>
+            <a class="social-links" href="https://www.hyperiondev.com/portfolio/100795/"><i class="fa-solid fa-laptop-code fa-social-icons"></i></a>
+        </div>
+
+        <!-- Footer list with website page links -->
+        <ul class="footer-list">
+            <li class="footer-list-items"><a class="footer-links" href="index.html">Home</a></li>
+            <li class="footer-list-items"><a class="footer-links" href="destinations.html">Destinations</a></li>
+            <li class="footer-list-items"><a class="footer-links" href="saveForLater.html">Save for Later</a></li>
+            <li class="footer-list-items"><a class="footer-links" href="contact.html">Contact</a></li>
+        </ul>
+
+        <!-- Footer paragraphs with additional information-->
+        <div class="footer-privacy margin-10">
+            <p class="footer-info">Website created by Timea Pentek</p>
+            <p class="footer-info">Like what you see? Click on the social icons from above. Get in touch!</p>
+            <p class="footer-info">Copyright&copy; 2022. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
+    
+
+    <!-- Add Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Add own js script tag when developed -->
+    <!-- *Insert here* -->
+</body>
+</html>

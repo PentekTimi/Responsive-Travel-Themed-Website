@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Add fontawesome icons -->
+    <script src="https://kit.fontawesome.com/d629a925ee.js" crossorigin="anonymous"></script>
+    <!-- Link own CSS file -->
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <title>Saved Destinations</title>
+</head>
+<body onload="displayFavorites()">
+    <!-- Header Save for Later page -->
+    <header>
+        <!-- Container for navbar, image, and h1 tag -->
+        <div class="destinations-intro-screen">
+            <!-- Navbar -->
+            <nav class="overlay navigation">
+               <ul class="nav-list">
+                   <li><a href="index.html" class="nav-link">Home</a></li>
+                   <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+                   <li><a href="saveForLater.html" class="nav-link">Save for Later</a></li>
+                   <li><a href="contact.html" class="nav-link">Contact</a></li>
+               </ul>
+           </nav>
+           
+           <!-- Welcome h1 tag Text -->
+           <div class="overlay intro-text align-center">
+                    <h1>Your favorite destinations in one place!</h1>
+           </div>
+
+           <!-- Destinations background image for header -->
+           <div>
+                <picture>
+                    <img src="../assets/mountain.jpg" class="d-block w-100 destinations-bg-img favorite-page-img" alt="Mountain image">
+                </picture>
+            </div>
+
+        </div>
+    </header>
+    <!-- Header Save for Later page end -->
+
+    <!-- Dynamically added bookmarked items container -->
+    <div id="dynamic-destination-cards" class="destination-cards">
+        <!-- Bookmarked items will go here -->
+    </div>
+
+<!-- Link own JS file -->
+<script src="../JS files/script.js" type="text/javascript"></script>
+</body>
+</html>
